@@ -7,27 +7,9 @@ import { hashMessage, signTx} from "./utils";
 function Transfer({ address, setBalance}) {
   const [sendAmount, setSendAmount] = useState("");
   const [recipient, setRecipient] = useState("");
-  //const [privateKey, setprivateKey] = useState("");
+  
 
   const setValue = (setter) => (evt) => setter(evt.target.value);
-
-  /*if (address) {
-    setprivateKey(privateKeys[address])
-  }*/
-    
-   /* async function klor (evt) {
-      evt.preventDefault();
-      if (address) {
-        const {
-          data: { privateKey },
-        } = await server.get(`privateKey/${address}`);
-        //setBalance(balance);
-        setprivateKey(privateKey);
-        //setNonce(nonce);
-      } else {
-        setprivateKey("");
-      }
-    }*/
      
     function validate(sendAmount, recipient) {
       if (!sendAmount || isNaN(parseInt(sendAmount))) {
@@ -43,8 +25,6 @@ function Transfer({ address, setBalance}) {
     
     async function transfer(evt) {
         evt.preventDefault();
-
-        //if (!validate(sendAmount, recipient)) return;
         if (validate(sendAmount, recipient) === true)  {
 
           try {
@@ -66,7 +46,7 @@ function Transfer({ address, setBalance}) {
             signature,
             recovery,
             msgHashString,
-           // msgHash: 
+          
           });
           setBalance(balance);
         }
