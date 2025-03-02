@@ -23,13 +23,6 @@ router.get("/balance/:address", (req, res) => {
   res.send({ balance });
 });
 
-/*router.get("/privateKey/:address", (req, res) => {
-  const { address } = req.params;
-  const privateKey = privateKeys[address] || 0;
-  res.send({ privateKey });
-});*/
-
-
 router.post("/send", (req, res) => {
   const { sender, recipient, amount, signature, msgHashString, recovery } = req.body;
 
