@@ -24,13 +24,6 @@ export function getAddress(publicKey) {
 }
 
 
-/*const privateKey = secp.utils.randomPrivateKey();
-console.log('private key:', toHex(privateKey));
-const publicKey = secp.getPublicKey(privateKey);
-console.log('public key: ', toHex(publicKey))
-const address = getAddress(publicKey);
-console.log('Address', toHex(address))*/
-
 export const privateKeys = {
   "0x7f72877a3096bd07435dee1264d4272ed508e331": "0xb93230bbb20f3eb54ddead0d5caeec1473e0454741739b062a58e29f1d872a53",
   "0x464c3b954321da28c51ab6c8f9c3ac8f16bd345d": "0xa073e14135cd54400fc1c8d8a98a62ee9c7c001ebc4a4d50c36e9b2f9755d80b",
