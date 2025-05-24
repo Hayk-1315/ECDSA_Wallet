@@ -1,0 +1,26 @@
+# Node modules
+**/node_modules
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv / env variables
+.env
+
+# Build output
+dist
+build
+
+# Vercel
+.vercel
+
+# LowDB data file
+server/db.json
+
+# VSCode settings
+.vscode
