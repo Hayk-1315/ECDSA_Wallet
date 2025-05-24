@@ -17,19 +17,6 @@ const db = low(adapter);
 db.defaults({ balances: {}, transactions: [] }).write();
 
 
-/*const balances = {
-  "0x08e6861ac5351322dde453e174094be26bf0a9ad": 475,
-  "0x84170080f1183f1390ec14579fe0a49e289081f4": 200,
-  "0x639a5ffe189cb2a093ed5baf2b27efcef8203090": 300,
-  "0x97fa3a4c05f5382e90fb5056e4f3ffcd29ceab04": 400,
-};*/
-
-/*router.get("/balance/:address", (req, res) => {
-  const { address } = req.params;
-  const balance = balances[address] || 0;
-  res.send({ balance });
-});*/
-
 router.get("/balance/:address", (req, res) => {
   const { address } = req.params;
   const balance = db.get('balances').get(address).value() || 0;
@@ -103,42 +90,7 @@ router.post("/send", async (req, res) => {
     console.error("Error processing transaction:", error);
     return res.status(500).send({ message: "Internal server error" });
   }
-
-  
-
   })
-  /*if (!balances[sender] || balances[sender] < amount) {
-    return res.status(400).send({ message: "Insufficient funds!" });
-  }
-  if (!balances[recipient]) {
-    return res.status(400).send({ message: "Recipient not registered!" });
-  }
-
-  balances[sender] -= amount;
-  balances[recipient] += amount;
-  res.send({ balance: balances[sender] });
-}
-  catch (error) {
-    console.error("Error processing transaction:", error);
-    return res.status(500).send({ message: "Internal server error" });
-  }*/
-
-
-
-/*router.post("/register", (req, res) => {
-  const { address } = req.body;
-
-  if (!address || !address.startsWith("0x")) {
-    return res.status(400).send({ message: "Dirección inválida" });
-  }
-
-  if (!balances[address]) {
-    balances[address] = 100; // saldo inicial inventado
-    return res.status(201).send({ message: "Wallet registrada", balance: 100 });
-  }
-
-  return res.status(200).send({ message: "Ya registrada", balance: balances[address] });
-});*/
 
 router.post("/register", (req, res) => {
   const { address } = req.body;
