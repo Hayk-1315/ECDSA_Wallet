@@ -10,7 +10,7 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
-## 🔐 Features
+## 🔐 Features:
 
 - 🔑 Generate public/private key pairs using ECDSA (secp256k1)
 - 💾 Persist wallets in browser's `localStorage`
@@ -23,7 +23,7 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
-## 🚀 Tech Stack
+## 🚀 Tech Stack:
 
 | Frontend      | Backend      | Crypto & DB        |
 |---------------|--------------|--------------------|
@@ -33,7 +33,7 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots:
 
 ### 💼 Wallet UI
 ![Wallet UI](./client/Screenshots/WalletUI.png)
@@ -46,7 +46,7 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
-## 📦 Installation
+## 📦 Installation:
 
 ```bash
 # 1. Clone the repo
@@ -81,7 +81,7 @@ Once deployed, update this section:
 🔗 Backend API:   https://ecdsa-wallet-api.onrender.com
 
 
-🎓 Educational Value
+🎓 Educational Value:
 This project was developed from scratch during a blockchain development bootcamp and then significantly enhanced. It simulates real-world Web3 behavior without requiring an actual blockchain.
 
 What you’ll learn:
@@ -99,7 +99,7 @@ What you’ll learn:
 Perfect for newcomers who want to understand Web3 without diving straight into Solidity or deploying smart contracts.
 
 
-🔮 Future Improvements
+🔮 Future Improvements:
 🔐 Encrypt private keys in localStorage (AES)
 
 🦊 MetaMask integration with ethers.js
@@ -115,13 +115,13 @@ Perfect for newcomers who want to understand Web3 without diving straight into S
 🧪 Add full unit & integration tests
 
 
-🧑‍💻 Author
-Made with ❤️ by @YourGitHubUsername
+🧑‍💻 Author:
+Made with ❤️ by Hayk-1315
 
 Feel free to reach out or contribute!
 
 
-📄 License
+📄 License:
 This project is licensed under the MIT License.
 You are free to fork, modify, and share for educational or personal use.
 
