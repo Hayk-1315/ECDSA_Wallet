@@ -50,7 +50,7 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/ecdsa-wallet.git
+git clone https://github.com/Hayk-1315/ECDSA_Wallet.git
 cd ecdsa-wallet
 
 # 2. Install backend dependencies
