@@ -122,6 +122,11 @@ router.delete("/wallet/:address", (req, res) => {
   res.send({ message: "Wallet deleted from DB" });
 });
 
+router.get("/debug", (req, res) => {
+  const data = db.getState(); // obtiene todo el contenido del JSON
+  res.send(data);
+}); 
+
 app.use("/api", router);
 
 
