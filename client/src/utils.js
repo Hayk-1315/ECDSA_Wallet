@@ -1,6 +1,6 @@
-import * as secp from "ethereum-cryptography/secp256k1";
-import { keccak256 } from "ethereum-cryptography/keccak";
-import {utf8ToBytes,hexToBytes,bytesToHex} from "ethereum-cryptography/utils";
+import * as secp from "ethereum-cryptography/secp256k1.js";
+import { keccak256 } from "ethereum-cryptography/keccak.js";
+import {utf8ToBytes,hexToBytes,bytesToHex} from "ethereum-cryptography/utils.js";
 
 // Hasheo de mensaje
 export function hashMessage(message) {
