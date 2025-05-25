@@ -68,17 +68,15 @@ npm start
 # 5. Start frontend (in another terminal)
 cd ../client
 npm run dev
+
 🌐 Deployment
 The project can be deployed in two parts:
 
 Frontend on Vercel
-
-Backend on Render or Railway
-
-Once deployed, update this section:
+Backend on Render
 
 🔗 Live Frontend: https://ecdsa-wallet.vercel.app  
-🔗 Backend API:   https://ecdsa-wallet-api.onrender.com
+🔗 Backend API:   https://ecdsa-wallet-backend.onrender.com
 
 
 🎓 Educational Value:
