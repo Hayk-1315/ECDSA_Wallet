@@ -6,7 +6,7 @@ const { hexToBytes, toHex, utf8ToBytes } = require('ethereum-cryptography/utils'
 const { keccak256 } = require("ethereum-cryptography/keccak");
 const port = process.env.PORT || 3042;
 const router = express.Router();
-const { getAddress } = require("./utils.js");
+const { getAddress } = require("./scripts/utils.js");
 app.use(cors());
 app.use(express.json());
 
