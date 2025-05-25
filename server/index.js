@@ -122,10 +122,22 @@ router.delete("/wallet/:address", (req, res) => {
   res.send({ message: "Wallet deleted from DB" });
 });
 
+// Debug endpoint para consultar el estado completo de la base de datos
 router.get("/debug", (req, res) => {
-  const data = db.getState(); // obtiene todo el contenido del JSON
-  res.send(data);
-}); 
+  const token = req.query.token;
+
+  // Autenticación básica por token
+  if (token !== "12345") {
+    return res.status(401).send({ message: "Unauthorized" });
+  }
+
+  try {
+    const fullData = db.getState(); // contiene balances y transactions
+    res.status(200).send(fullData);
+  } catch (err) {
+    res.status(500).send({ message: "Error leyendo base de datos" });
+  }
+});
 
 app.use("/api", router);
 
