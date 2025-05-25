@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import server from "./server";
-import { getAddress } from "./utils";
+import { getAddress } from "./utils.js";
 import * as secp from "ethereum-cryptography/secp256k1";
 import { toHex } from "ethereum-cryptography/utils";
 
