@@ -33,19 +33,6 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
-## 📸 Screenshots:
-
-### 💼 Wallet UI
-![Wallet UI](./client/Screenshots/WalletUI.png)
-
-### 💸 Transaction Form
-![Transaction](./client/Screenshots/Transfer.png)
-
-### 📜 Transaction History
-![History](./client/Screenshots/History.png)
-
----
-
 ## 📦 Installation:
 
 ```bash
@@ -80,7 +67,6 @@ Backend on Render
 
 
 🎓 Educational Value:
-This project was developed from scratch during a blockchain development bootcamp and then significantly enhanced. It simulates real-world Web3 behavior without requiring an actual blockchain.
 
 What you’ll learn:
 
@@ -102,19 +88,13 @@ Perfect for newcomers who want to understand Web3 without diving straight into S
 
 🦊 MetaMask integration with ethers.js
 
-🗃 Wallet export/import feature
-
 📦 Migrate from LowDB to MongoDB or PostgreSQL
-
-📡 Real-time updates with WebSockets
-
-📱 Make it mobile responsive
 
 🧪 Add full unit & integration tests
 
 
 🧑‍💻 Author:
-Made with ❤️ by Hayk-1315
+Made with ❤️ by Albert Khudaverdyan
 
 Feel free to reach out or contribute!
 
