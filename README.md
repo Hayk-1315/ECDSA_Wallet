@@ -10,6 +10,14 @@ A simulated Web3 wallet app that uses ECDSA cryptographic signatures for secure 
 
 ---
 
+## 🚀 Live Demo
+
+🔗 The app is deployed on:
+- **Frontend (Vercel):** https://ecdsa-wallet.vercel.app 
+- **Backend (Render):**  https://ecdsa-wallet-backend.onrender.com
+
+---
+
 ## 🔐 Features:
 
 - 🔑 Generate public/private key pairs using ECDSA (secp256k1)
@@ -55,16 +63,6 @@ npm start
 # 5. Start frontend (in another terminal)
 cd ../client
 npm run dev
-
-🌐 Deployment
-The project can be deployed in two parts:
-
-Frontend on Vercel
-Backend on Render
-
-🔗 Live Frontend: https://ecdsa-wallet.vercel.app  
-🔗 Backend API:   https://ecdsa-wallet-backend.onrender.com
-
 
 🎓 Educational Value:
 
